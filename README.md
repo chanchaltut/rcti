@@ -1,1 +1,1 @@
-RCTI It is :)
+RCTI
