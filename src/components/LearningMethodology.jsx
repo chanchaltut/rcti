@@ -40,7 +40,7 @@ function LearningMethodology() {
               <span className="inline-flex h-6 w-6 items-center justify-center rounded-full bg-sky-50 text-sky-600">
                 <HiPhone className="h-4 w-4" />
               </span>
-              <span className="font-semibold">9831284098</span>
+              <span className="font-semibold">7855959544</span>
             </p>
           </div>
 

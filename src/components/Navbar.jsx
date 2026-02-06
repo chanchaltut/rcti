@@ -20,7 +20,7 @@ function Navbar() {
             <div className="bg-sky-500 text-white text-[11px] sm:text-xs">
                 <div className="mx-auto flex max-w-6xl items-center justify-between px-4 py-1.5">
                     <p className="font-medium tracking-wide">
-                        Eastern India&apos;s No.1 Professional Training Institute
+                        Professional Computer Training Institute in Bhawanipatna, Odisha
                     </p>
                     <button className="hidden items-center gap-2 rounded-full bg-sky-600 px-3 py-1 text-[11px] font-semibold tracking-wide shadow-sm hover:bg-sky-700 sm:flex">
                         <span className="inline-flex h-5 w-5 items-center justify-center rounded-full bg-sky-400">
