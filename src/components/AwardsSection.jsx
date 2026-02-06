@@ -82,35 +82,14 @@ function AwardsSection() {
 
           {/* Right Section - Award Ceremony Photo */}
           <div className="relative">
-            <div className="relative overflow-hidden rounded-2xl bg-slate-100 shadow-xl">
-              {/* Placeholder for award ceremony photo */}
-              <div className="aspect-[4/3] w-full bg-gradient-to-br from-slate-200 to-slate-300">
-                <div className="flex h-full items-center justify-center">
-                  <div className="text-center">
-                    <div className="mx-auto mb-4 flex h-32 w-32 items-center justify-center rounded-full bg-sky-600/20">
-                      <svg
-                        className="h-16 w-16 text-sky-600"
-                        fill="none"
-                        stroke="currentColor"
-                        viewBox="0 0 24 24"
-                      >
-                        <path
-                          strokeLinecap="round"
-                          strokeLinejoin="round"
-                          strokeWidth={2}
-                          d="M9 12l2 2 4-4M7.835 4.697a3.42 3.42 0 001.946-.806 3.42 3.42 0 014.438 0 3.42 3.42 0 001.946.806 3.42 3.42 0 013.138 3.138 3.42 3.42 0 00.806 1.946 3.42 3.42 0 010 4.438 3.42 3.42 0 00-.806 1.946 3.42 3.42 0 01-3.138 3.138 3.42 3.42 0 00-1.946.806 3.42 3.42 0 01-4.438 0 3.42 3.42 0 00-1.946-.806 3.42 3.42 0 01-3.138-3.138 3.42 3.42 0 00-.806-1.946 3.42 3.42 0 010-4.438 3.42 3.42 0 00.806-1.946 3.42 3.42 0 013.138-3.138z"
-                        />
-                      </svg>
-                    </div>
-                    <p className="text-sm font-semibold text-slate-600">
-                      Award Ceremony Photo
-                    </p>
-                    <p className="mt-1 text-xs text-slate-500">
-                      Replace with actual image
-                    </p>
-                  </div>
-                </div>
-              </div>
+            <div className="relative overflow-hidden rounded-2xl shadow-xl">
+              <img
+                src="https://images.unsplash.com/photo-1511578314322-379afb476865?w=800&h=600&fit=crop"
+                alt="Award Ceremony"
+                className="aspect-[4/3] w-full object-cover"
+                loading="lazy"
+              />
+              <div className="absolute inset-0 bg-gradient-to-t from-black/20 to-transparent" />
             </div>
           </div>
         </div>

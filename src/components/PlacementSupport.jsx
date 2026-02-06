@@ -37,7 +37,7 @@ const placementServices = [
   {
     title: 'Hiring Partners & Career Portal Access',
     features: [
-      '50+ active hiring partners',
+      'Active hiring partners network',
       'Exclusive access to job listings',
       'Direct interview referrals',
     ],

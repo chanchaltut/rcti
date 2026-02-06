@@ -43,7 +43,7 @@ function FutureProspects() {
           {/* Salary text */}
           <p className="mt-6 text-sm text-slate-700">
             Average Salary in India:{' '}
-            <span className="font-semibold text-slate-900">₹4–12 LPA</span>{' '}
+            <span className="font-semibold text-slate-900">₹3–8 LPA</span>{' '}
             <span className="text-slate-500">(as per industry standard)</span>
           </p>
 
@@ -55,15 +55,14 @@ function FutureProspects() {
 
         {/* Right illustration */}
         <div className="w-full max-w-md lg:flex-1">
-          <div className="relative mx-auto aspect-[4/3] max-w-md overflow-hidden rounded-[32px] bg-sky-100">
-            <div className="absolute inset-0 bg-[radial-gradient(circle_at_top,_#c7d2fe_0,_transparent_45%),_radial-gradient(circle_at_bottom,_#7dd3fc_0,_transparent_55%)]" />
-            <div className="relative flex h-full items-center justify-center px-6">
-              <div className="flex gap-4">
-                <div className="h-40 w-24 rounded-2xl bg-white/90 shadow-lg shadow-sky-200" />
-                <div className="h-52 w-40 rounded-3xl bg-white/95 shadow-xl shadow-sky-300" />
-                <div className="mt-6 h-32 w-20 rounded-2xl bg-white/80 shadow-md shadow-sky-200" />
-              </div>
-            </div>
+          <div className="relative mx-auto aspect-[4/3] max-w-md overflow-hidden rounded-[32px] shadow-xl">
+            <img
+              src="https://images.unsplash.com/photo-1460925895917-afdab827c52f?w=800&h=600&fit=crop"
+              alt="Data Analyst Career Growth"
+              className="h-full w-full object-cover"
+              loading="lazy"
+            />
+            <div className="absolute inset-0 bg-gradient-to-br from-sky-600/20 via-transparent to-purple-600/20" />
           </div>
         </div>
       </div>

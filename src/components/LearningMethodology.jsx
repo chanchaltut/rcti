@@ -5,7 +5,7 @@ const methodologyItems = [
   'Live Practical Classes',
   'Free Study Materials',
   'Global Certifications',
-  '15+ Portfolio Projects',
+  'Hands-on Portfolio Projects',
   'Dedicated Placement Cell',
   'Resume & Interview Preparation',
   'Theory+Practical Examination',
@@ -45,15 +45,14 @@ function LearningMethodology() {
           </div>
 
           <div className="mt-6 flex justify-center lg:mt-0">
-            <div className="relative h-40 w-64 overflow-hidden rounded-3xl bg-sky-50 sm:h-48 sm:w-80">
-              <div className="absolute inset-0 bg-[radial-gradient(circle_at_top,_#e0f2fe_0,_transparent_55%),_radial-gradient(circle_at_bottom,_#bfdbfe_0,_transparent_60%)]" />
-              <div className="relative flex h-full items-end justify-center pb-4">
-                <div className="flex gap-2">
-                  <div className="h-24 w-14 rounded-2xl bg-white/90 shadow-md shadow-sky-200" />
-                  <div className="h-28 w-16 rounded-2xl bg-white/95 shadow-lg shadow-sky-300" />
-                  <div className="h-24 w-14 rounded-2xl bg-white/90 shadow-md shadow-sky-200" />
-                </div>
-              </div>
+            <div className="relative h-40 w-64 overflow-hidden rounded-3xl sm:h-48 sm:w-80">
+              <img
+                src="https://images.unsplash.com/photo-1522202176988-66273c2fd55f?w=600&h=400&fit=crop"
+                alt="Students learning together"
+                className="h-full w-full object-cover"
+                loading="lazy"
+              />
+              <div className="absolute inset-0 bg-gradient-to-t from-sky-900/30 to-transparent" />
             </div>
           </div>
         </div>

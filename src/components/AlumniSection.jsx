@@ -100,9 +100,9 @@ function AlumniSection() {
 
         {/* Statistics */}
         <p className="mt-6 text-center text-base text-slate-700 sm:text-lg">
-          <span className="font-bold text-sky-600">750+</span> Students placed last year alone! Salary Ranges from{' '}
-          <span className="font-semibold">₹25,000</span> to{' '}
-          <span className="font-semibold">₹60,000</span> per month.
+          Our growing community of successful alumni! Salary Ranges from{' '}
+          <span className="font-semibold">₹20,000</span> to{' '}
+          <span className="font-semibold">₹40,000</span> per month.
         </p>
 
         {/* Alumni Cards Carousel */}

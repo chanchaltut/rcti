@@ -27,7 +27,12 @@ function CourseOverview() {
           <div className="grid gap-0 lg:grid-cols-[1.05fr_1.6fr]">
             {/* Left image */}
             <div className="relative overflow-hidden rounded-t-[32px] border-b border-slate-100 bg-slate-200 lg:rounded-l-[32px] lg:rounded-tr-none lg:border-b-0">
-              <div className="aspect-[4/3] w-full bg-[url('https://images.pexels.com/photos/1181675/pexels-photo-1181675.jpeg')] bg-cover bg-center lg:aspect-auto lg:h-full" />
+              <img
+                src="https://images.unsplash.com/photo-1551288049-bebda4e38f71?w=800&h=600&fit=crop"
+                alt="Data Analytics Course"
+                className="aspect-[4/3] w-full object-cover lg:aspect-auto lg:h-full"
+                loading="lazy"
+              />
             </div>
 
             {/* Right content */}

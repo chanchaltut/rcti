@@ -4,17 +4,17 @@ import { HiStar } from 'react-icons/hi2';
 const testimonials = [
   {
     rating: 5,
-    text: "Ami kokhono bhabini Data Analytics amake ei rokom career opportunity debe. EME Academy'r guidance ar Power BI & Tableau er practical knowledge amar life-e onek boro change ene diyeche.",
+    text: "RCTI Academy'r Data Analytics course ta amar career e onek boro change ene diyeche. Power BI ar Tableau er practical knowledge diye amake job-ready kore tola hoyeche. Instructors ra khub supportive.",
     name: 'Arindam Banerjee',
   },
   {
     rating: 4,
-    text: "Training sesh howar agei interview call peyechilam. Power BI ar SQL niye confidence build korechhi ar akhon ekta top company te BI Analyst er position e kaj korchi.",
+    text: "Training sesh howar por interview call peyechilam. SQL ar Excel niye confidence build korechhi. Akhon ekta company te Data Analyst er position e kaj korchi. RCTI Academy'r guidance khub helpful chhilo.",
     name: 'Rituparna Ghosh',
   },
   {
-    rating: 4,
-    text: "Is course ke baad 50% salary hike mili! Data Analytics is a must-have skill in today's time and the instructors at EME Academy are just amazing. I believe that their mentorship was a key factor in helping me secure this role as a Data Visualisation Specialist",
+    rating: 5,
+    text: "The Data Analytics course at RCTI Academy helped me transition into a data-focused role. The hands-on projects and mentor support were excellent. I'm now working as a Data Analyst and the skills I learned are directly applicable to my job.",
     name: 'Nidhi Agarwal',
   },
 ];

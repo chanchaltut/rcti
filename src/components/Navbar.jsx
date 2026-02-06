@@ -26,7 +26,7 @@ function Navbar() {
                         <span className="inline-flex h-5 w-5 items-center justify-center rounded-full bg-sky-400">
                             <HiPhone className="h-3 w-3 text-white" />
                         </span>
-                        <span>+91 9093926145</span>
+                        <span>+91 7855959544</span>
                     </button>
                 </div>
             </div>

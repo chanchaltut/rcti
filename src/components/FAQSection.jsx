@@ -34,7 +34,7 @@ const faqs = [
   {
     question: 'What types of real-world projects will I work on?',
     answer:
-      'You will work on 15+ portfolio projects covering various industries including e-commerce, healthcare, finance, and more.',
+      'You will work on multiple portfolio projects covering various industries including e-commerce, healthcare, finance, and more to build your practical skills.',
   },
   {
     question: 'Is there an internship included in the course?',
@@ -54,7 +54,7 @@ const faqs = [
   {
     question: 'How can I enroll?',
     answer:
-      'You can enroll by filling out the enrollment form on our website, calling us at +91 9093926145, or visiting our campus.',
+      'You can enroll by filling out the enrollment form on our website, calling us at +91 7855959544, or visiting our campus.',
   },
 ];
 

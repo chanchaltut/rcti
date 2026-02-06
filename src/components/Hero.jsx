@@ -25,7 +25,7 @@ function Hero() {
 
           <p className="text-sm leading-relaxed text-slate-200 sm:text-[15px]">
             Gain knowledge of Python, SQL, Excel, Tableau, Power BI with our
-            Data Analytics Course in Bhawanipatna, Odisha and earn up to ₹12 LPA! We bridge
+            Data Analytics Course in Bhawanipatna, Odisha and earn up to ₹6-8 LPA! We bridge
             theory with real-world application to empower you to solve business
             problems using industry tools.
           </p>
@@ -223,7 +223,7 @@ function Hero() {
               <HiAcademicCap className="h-5 w-5 text-white" />
             </span>
             <div>
-              <p className="font-semibold">10+ Years of Excellence</p>
+              <p className="font-semibold">Expert Training</p>
               <p className="text-[11px] text-slate-300">
                 Learn from experienced data analytics mentors.
               </p>
