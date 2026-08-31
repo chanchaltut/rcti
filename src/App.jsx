@@ -4,6 +4,7 @@ import Hero from './components/Hero.jsx';
 import StudentsCompanies from './components/StudentsCompanies.jsx';
 import CourseOverview from './components/CourseOverview.jsx';
 import FeaturedIn from './components/FeaturedIn.jsx';
+import AssociatedUniversities from './components/AssociatedUniversities.jsx';
 import ToolsTechnologies from './components/ToolsTechnologies.jsx';
 import FutureProspects from './components/FutureProspects.jsx';
 import LearningMethodology from './components/LearningMethodology.jsx';
@@ -12,6 +13,7 @@ import AlumniSection from './components/AlumniSection.jsx';
 import StudentsTestimonials from './components/StudentsTestimonials.jsx';
 import AwardsSection from './components/AwardsSection.jsx';
 import DownloadBrochureSection from './components/DownloadBrochureSection.jsx';
+import GallerySection from './components/GallerySection.jsx';
 import FAQSection from './components/FAQSection.jsx';
 import Footer from './components/Footer.jsx';
 
@@ -23,6 +25,7 @@ function App() {
       <StudentsCompanies />
       <CourseOverview />
       <FeaturedIn />
+      <AssociatedUniversities />
       <ToolsTechnologies />
       <FutureProspects />
       <LearningMethodology />
@@ -31,6 +34,7 @@ function App() {
       <StudentsTestimonials />
       <AwardsSection />
       <DownloadBrochureSection />
+      <GallerySection />
       <FAQSection />
       <Footer />
     </div>

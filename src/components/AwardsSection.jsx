@@ -3,7 +3,7 @@ import { HiStar } from 'react-icons/hi2';
 
 function AwardsSection() {
   return (
-    <section className="bg-white py-16">
+    <section id="awards" className="bg-white py-16">
       <div className="mx-auto max-w-6xl px-4">
         <div className="grid gap-8 lg:grid-cols-2 lg:items-center">
           {/* Left Section - Award Recognition */}

@@ -1,18 +1,18 @@
 import React, { useState, useEffect } from 'react';
 import { HiPhone, HiArrowRight } from 'react-icons/hi2';
+import { Link, useLocation } from 'react-router-dom';
 
 const navItems = [
-    'Course Overview',
-    'Featured In',
-    'Course Curriculum',
-    'Tools',
-    'Career Prospects',
-    'Testimonials',
-    'Awards',
+    { name: 'Courses', path: '/#courses' },
+    { name: 'Universities', path: '/#universities' },
+    { name: 'Gallery', path: '/#gallery' },
+    { name: 'Testimonials', path: '/#testimonials' },
+    { name: 'Awards', path: '/#awards' },
 ];
 
 function Navbar() {
     const [mobileOpen, setMobileOpen] = useState(false);
+    const location = useLocation();
 
     // Prevent body scroll when sidebar is open
     useEffect(() => {
@@ -26,6 +26,18 @@ function Navbar() {
         };
     }, [mobileOpen]);
 
+    // Handle hash scrolling
+    useEffect(() => {
+        if (location.hash) {
+            const element = document.getElementById(location.hash.slice(1));
+            if (element) {
+                element.scrollIntoView({ behavior: 'smooth' });
+            }
+        } else {
+            window.scrollTo({ top: 0, behavior: 'smooth' });
+        }
+    }, [location]);
+
     return (
         <header className="sticky top-0 z-30 shadow-sm">
             {/* Top info strip */}
@@ -34,12 +46,14 @@ function Navbar() {
                     <p className="font-medium tracking-wide">
                         Professional Computer Training Institute in Bhawanipatna, Odisha
                     </p>
-                    <button className="hidden items-center gap-2 rounded-full bg-sky-600 px-3 py-1 text-[11px] font-semibold tracking-wide shadow-sm hover:bg-sky-700 sm:flex">
-                        <span className="inline-flex h-5 w-5 items-center justify-center rounded-full bg-sky-400">
-                            <HiPhone className="h-3 w-3 text-white" />
-                        </span>
-                        <span>+91 7855959544</span>
-                    </button>
+                    <div className="hidden sm:flex items-center gap-4">
+                        <button className="items-center gap-2 rounded-full bg-sky-600 px-3 py-1 text-[11px] font-semibold tracking-wide shadow-sm hover:bg-sky-700 flex">
+                            <span className="inline-flex h-5 w-5 items-center justify-center rounded-full bg-sky-400">
+                                <HiPhone className="h-3 w-3 text-white" />
+                            </span>
+                            <span>+91 7855959544</span>
+                        </button>
+                    </div>
                 </div>
             </div>
 
@@ -47,29 +61,36 @@ function Navbar() {
             <div className="border-b border-slate-100 bg-white/95 backdrop-blur-sm">
                 <div className="mx-auto flex max-w-6xl items-center justify-between gap-4 px-4 py-3 lg:py-4">
                     {/* Logo / Brand */}
-                    <div className="flex items-center gap-3">
+                    <Link to="/" className="flex items-center gap-3">
                         <img
                             src="/rctiLogo.png"
                             alt="RCTI Academy"
                             className="h-12 w-auto object-contain"
                         />
-                    </div>
+                    </Link>
 
                     {/* Desktop nav */}
                     <nav className="hidden items-center gap-6 text-[13px] font-medium text-slate-700 lg:flex">
                         {navItems.map((item) => (
-                            <button
-                                key={item}
-                                className="relative transition-colors hover:text-sky-600"
+                            <Link
+                                key={item.name}
+                                to={item.path}
+                                className="relative transition-colors hover:text-sky-600 group"
                             >
-                                {item}
+                                {item.name}
                                 <span className="absolute -bottom-1 left-0 h-0.5 w-0 bg-sky-500 transition-all group-hover:w-full" />
-                            </button>
+                            </Link>
                         ))}
                     </nav>
 
                     {/* CTA + mobile menu button */}
                     <div className="flex items-center gap-3">
+                        <a 
+                            href="https://swagatodisha.com/login"
+                            className="hidden items-center rounded-full border-2 border-sky-600 px-5 py-1.5 text-xs font-semibold text-sky-600 hover:bg-sky-50 lg:inline-flex"
+                        >
+                            Login
+                        </a>
                         <button className="hidden items-center rounded-full bg-sky-600 px-5 py-2 text-xs font-semibold text-white shadow-sm hover:bg-sky-700 lg:inline-flex">
                             Contact Us
                             <HiArrowRight className="ml-1 h-4 w-4" />
@@ -137,21 +158,31 @@ function Navbar() {
                     {/* Navigation items */}
                     <nav className="flex flex-1 flex-col gap-1 px-4 py-6 text-sm font-medium text-slate-700 overflow-y-auto">
                         {navItems.map((item) => (
-                            <button
-                                key={item}
+                            <Link
+                                key={item.name}
+                                to={item.path}
                                 onClick={() => setMobileOpen(false)}
-                                className="w-full rounded-md px-4 py-3 text-left transition-colors hover:bg-slate-50 hover:text-sky-600"
+                                className="w-full rounded-md px-4 py-3 text-left transition-colors hover:bg-slate-50 hover:text-sky-600 block"
                             >
-                                {item}
-                            </button>
+                                {item.name}
+                            </Link>
                         ))}
-                        <button
-                            onClick={() => setMobileOpen(false)}
-                            className="mt-4 w-full rounded-full bg-sky-600 px-4 py-3 text-xs font-semibold text-white shadow-sm hover:bg-sky-700 flex items-center justify-center gap-2"
-                        >
-                            Contact Us
-                            <HiArrowRight className="h-4 w-4" />
-                        </button>
+                        <div className="mt-4 flex flex-col gap-2">
+                            <a 
+                                href="https://swagatodisha.com/login"
+                                onClick={() => setMobileOpen(false)}
+                                className="w-full rounded-full border-2 border-sky-600 px-4 py-3 text-xs font-semibold text-sky-600 text-center hover:bg-sky-50"
+                            >
+                                Login
+                            </a>
+                            <button
+                                onClick={() => setMobileOpen(false)}
+                                className="w-full rounded-full bg-sky-600 px-4 py-3 text-xs font-semibold text-white shadow-sm hover:bg-sky-700 flex items-center justify-center gap-2"
+                            >
+                                Contact Us
+                                <HiArrowRight className="h-4 w-4" />
+                            </button>
+                        </div>
                     </nav>
                 </div>
             </div>
